@@ -86,31 +86,32 @@ scan du réseau afin de decouvrire tout les machines qui sont dans le réseai ai
 1. Installer Zapproxy
 
 les commandes au quel nous pouvons installer le zapproxy dans kali linux
-
-# sudo apt update
-# sudo apt install zaproxy -y
-
+~~~fraper
+sudo apt update
+sudo apt install zaproxy -y
+~~~
 puis lance :
-
-# zaproxy
-
+~~~fraper
+ zaproxy
+~~~
 2. Installer OWASP Juice Shop
 
 Étape 1 : installer Docker
-
-# sudo apt install docker.io -y
-# sudo systemctl start docker
-# sudo systemctl enable docker
-
-# sudo usermod -aG docker $USER
-
+~~~fraper
+sudo apt install docker.io -y
+sudo systemctl start docker
+sudo systemctl enable docker
+~~~
+~~~fraper
+sudo usermod -aG docker $USER
+~~~
 puis rédemare la session
 
 Étape 2 : lancer Juice Shop
-
-# docker pull bkimminich/juice-shop
-# docker run -d -p 3000:3000 bkimminich/juice-shop
-
+~~~fraper
+docker pull bkimminich/juice-shop
+docker run -d -p 3000:3000 bkimminich/juice-shop
+~~~
 Lance ZAP
 Dans ZAP → “Automated Scan”
 Mets : http://localhost:3000
@@ -119,9 +120,9 @@ Mets : http://localhost:3000
 
 Lance le scan
 Tu vas voir des vulnérabilités comme :
-# XSS
-# SQL Injection
-# mauvaises configurations
+XSS,
+SQL Injection,
+mauvaises configurations
 
 <img width="1362" height="763" alt="Capture d’écran du 2026-05-13 11-06-31" src="https://github.com/user-attachments/assets/a599bfd5-4eee-436d-a3e6-b8f3823f38dd" />
 
@@ -131,12 +132,3 @@ Tu vas voir des vulnérabilités comme :
 
 <img width="1362" height="763" alt="Capture d’écran du 2026-05-13 11-09-16" src="https://github.com/user-attachments/assets/9315dc5e-32eb-4262-9049-7f141ec7c6ec" />
 
-## 📄 Report
-
-The full professional vulnerability assessment report is available in the `/report` folder.
-
----
-
-## 👨‍💻 Author
-
-Cyber Security Intern – Future Interns

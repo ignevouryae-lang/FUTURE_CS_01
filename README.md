@@ -72,8 +72,6 @@ Inspected requests, cookies, and responses using Browser DevTools.
 
 ---
 
-## 📷 Screenshots
-
 ### Nmap Scan
 scan du réseau afin de decouvrire tout les machines qui sont dans le réseai ainsi que des ports ouverts.
 
